@@ -55,7 +55,7 @@ def filter_table(table):
 
 def perform_and_display_aggregations(table_dict):
         
-    eval_columns = ["exemplary", "proficient", "developing", "emerging", "student"]
+    eval_columns = ["exemplary", "proficient", "developing", "emerging", "student_total"]
     
     #create dictionary with each course paired with it's table of aggregable columns
     eval_tables_dict = {}
