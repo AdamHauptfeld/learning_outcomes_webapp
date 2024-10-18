@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+from PIL import Image
 
 def main():
     st.title("Welcome to the Philosophy Discipline LO Report Aggregator")
@@ -27,7 +27,8 @@ def main():
             (axis=1)
 
         #Display happy image
-        st.image(![](https://github.com/AdamHauptfeld/learning_outcomes_webapp/blob/master/it_works.jpg))
+        happy_adam = Image.open(r"https://github.com/AdamHauptfeld/learning_outcomes_webapp/blob/master/it_works.jpg")
+        st.image(happy_adam)
         
         # Display the combined dataframe
         st.subheader("Combined Table")
