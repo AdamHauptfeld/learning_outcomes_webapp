@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 
 
-# py -m streamlit run "g:/My Drive/Data Nerd/Projects/learning_outcomes_webapp/learning_outcomes_webapp.py"
-
 def main():
     st.title("Welcome to the Philosophy Discipline LO Report Aggregator")
     
@@ -27,6 +25,9 @@ def main():
         #add total number of students column to dataframe
         total_table["student_total"] = total_table[["exemplary", "proficient", "developing", "emerging"]].sum\
             (axis=1)
+
+        #Display happy image
+        st.image(it_works.jpg)
         
         # Display the combined dataframe
         st.subheader("Combined Table")
