@@ -29,7 +29,7 @@ def main():
             (axis=1)
         
         # Display the combined dataframe
-        st.subheader("Combined Dataframe")
+        st.subheader("Combined Table")
         st.dataframe(total_table, height = 250)
 
         filtered_tables = filter_table(total_table)
@@ -78,7 +78,7 @@ def perform_and_display_aggregations(table_dict):
     
     
     for eval_table in eval_tables_dict:
-        st.header(eval_table)
+        st.header(eval_table+" Data")
         summary = eval_tables_dict[eval_table].agg(['sum', 'mean'])
         st.write(summary)
       
