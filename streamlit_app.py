@@ -27,7 +27,7 @@ def main():
             (axis=1)
 
         #Display happy image
-        st.image(it_works.jpg)
+        st.image(https://github.com/AdamHauptfeld/learning_outcomes_webapp/blob/master/it_works.jpg)
         
         # Display the combined dataframe
         st.subheader("Combined Table")
