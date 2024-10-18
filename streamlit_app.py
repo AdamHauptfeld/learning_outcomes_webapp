@@ -27,6 +27,7 @@ def main():
         
         # Display the combined dataframe
         st.subheader("Combined Table")
+        st.write("You can download the table as a CSV for opening in Excel")
         st.dataframe(total_table, height = 250)
 
         filtered_tables = filter_table(total_table)
