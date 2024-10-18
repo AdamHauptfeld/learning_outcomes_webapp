@@ -27,6 +27,7 @@ def main():
             (axis=1)
 
         #It might be a good idea to rename the columns here eg. from EXEMPLARY_TOTAL to just EXEMPLARY (since summing happens later)
+        total_table.rename(columns={"exemplary_total":"exemplary", "proficient_total":"proficient", "developing_total":"developing", "emerging_total":"emerging"}, inplace = True)
         
         # Display the combined dataframe
         st.subheader("Combined Dataframe")
@@ -55,7 +56,7 @@ def filter_table(table):
 
 def perform_and_display_aggregations(table_dict):
         
-    eval_columns = ["exemplary_total", "proficient_total", "developing_total", "emerging_total", "student_total"]
+    eval_columns = ["exemplary", "proficient", "developing", "emerging", "student"]
     
     #create dictionary with each course paired with it's table of aggregable columns
     eval_tables_dict = {}
