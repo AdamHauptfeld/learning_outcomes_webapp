@@ -20,8 +20,8 @@ def main():
         total_table = pd.concat(df_list, ignore_index=True)
 
         #convert TERM and CLASS_NUMBER column datatype to string
-        total_table['term'] = df['term'].astype(str)
-        total_table['class_number'] = df['class_number'].astype(str)
+        #total_table['term'] = df['term'].astype(str)
+        #total_table['class_number'] = df['class_number'].astype(str)
 
         #add total number of students column to dataframe
         total_table["student_total"] = total_table[["exemplary_total", "proficient_total", "developing_total", "emerging_total"]].sum\
