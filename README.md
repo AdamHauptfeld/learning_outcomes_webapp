@@ -3,7 +3,7 @@
 # https://mdc-learning-outcomes-aggregator.streamlit.app/
 
 ```
-# Upload multiple Excel files and let my app do all the aggregating for you!
+Upload multiple Excel files and let my app do all the aggregating for you!
 
 ```
 ## Demo App
