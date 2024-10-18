@@ -21,13 +21,12 @@ def main():
         
         total_table = pd.concat(df_list, ignore_index=True)
 
-
-        #add total number of students column to dataframe
-        total_table["student_total"] = total_table[["exemplary_total", "proficient_total", "developing_total", "emerging_total"]].sum\
-            (axis=1)
-
         #It might be a good idea to rename the columns here eg. from EXEMPLARY_TOTAL to just EXEMPLARY (since summing happens later)
         total_table.rename(columns={"exemplary_total":"exemplary", "proficient_total":"proficient", "developing_total":"developing", "emerging_total":"emerging"}, inplace = True)
+
+        #add total number of students column to dataframe
+        total_table["student_total"] = total_table[["exemplary", "proficient", "developing", "emerging"]].sum\
+            (axis=1)
         
         # Display the combined dataframe
         st.subheader("Combined Dataframe")
