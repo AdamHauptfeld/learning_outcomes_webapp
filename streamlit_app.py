@@ -30,8 +30,6 @@ def main():
         st.write("You can download the table as a CSV for opening in Excel.")
         st.dataframe(total_table, height = 250)
 
-        st.image("it_works.jpg")
-
         filtered_tables = filter_table(total_table)
         perform_and_display_aggregations(filtered_tables)
 
