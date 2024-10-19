@@ -30,7 +30,7 @@ def main():
         st.write("You can download the table as a CSV for opening in Excel.")
         st.dataframe(total_table, height = 250)
 
-        example_df = pd.read_excel(example_files/learning_outcomes_report_sample3.xlsx)
+        example_df = pd.read_excel("example_files/learning_outcomes_report_sample3.xlsx)
         st.write(example_df)
 
         filtered_tables = filter_table(total_table)
