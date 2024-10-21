@@ -6,6 +6,11 @@ def main():
     
     # File uploader
     uploaded_files = st.file_uploader("Choose Excel files", type="xlsx", accept_multiple_files=True)
+
+    with st.sidebar:
+        example_url = "https://github.com/AdamHauptfeld/learning_outcomes_webapp/tree/master/example_files"
+        st.write("check out this [link](%s)" % example_url)
+        st.markdown("check out this [link](%s)" % example_url)
     
     if uploaded_files:
         # Combine all uploaded files into a single dataframe
