@@ -9,8 +9,7 @@ def main():
 
     with st.sidebar:
         example_url = "https://github.com/AdamHauptfeld/learning_outcomes_webapp/tree/master/example_files"
-        st.write("check out this [link](%s)" % example_url)
-        st.write("Hey, it's the sidebar!")
+        st.write("Use this [link](%s) to view the excel template and examples of proper formatting of the documents to be uploaded." % example_url)
     
     if uploaded_files:
         # Combine all uploaded files into a single dataframe
