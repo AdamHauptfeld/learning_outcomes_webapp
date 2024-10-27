@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 
 def main():
-    st.title("Welcome to the Philosophy Discipline LO Report Aggregator")
+    st.title("Philosophy Discipline LO Report Aggregator")
     
     # File uploader
     uploaded_files = st.file_uploader("Choose Excel files", type="xlsx", accept_multiple_files=True)
